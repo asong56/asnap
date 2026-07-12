@@ -1,4 +1,4 @@
-# asnap (幽灵快照)
+# asnap
 
 Zero-UI, hotkey-driven, single-binary screen-capture daemon. No config file,
 no tray icon, no window. Press a hotkey, get a file on your Desktop.
