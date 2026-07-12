@@ -1,0 +1,23 @@
+[package]
+name    = "asnap"
+version = "0.1.0"
+edition = "2021"
+description = "asnap 幽灵快照 — zero-UI hotkey-driven screen-capture daemon"
+
+[[bin]]
+name = "asnap"
+path = "src/main.rs"
+
+[dependencies]
+rdev    = "0.5"
+chrono  = { version = "0.4", default-features = false, features = ["clock"] }
+dirs    = "5"
+image   = { version = "0.24", default-features = false, features = ["png"] }
+arboard = { version = "3", default-features = false }
+
+[profile.release]
+opt-level     = "z"
+lto           = true
+codegen-units = 1
+strip         = true
+panic         = "abort"
