@@ -1,3 +1,5 @@
+*I haven't tested it on macos and linux, welcome everyone's contribution. thx*
+
 # asnap
 
 Zero-UI, hotkey-driven, single-binary screen-capture daemon. No config file,
